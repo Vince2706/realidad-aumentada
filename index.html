@@ -10,7 +10,13 @@
   <a-scene embedded arjs="sourceType: webcam; debugUIEnabled: false;">
 
     <a-marker preset="hiro">
-<a-sphere position="0 0.5 0" radius="0.5" color="#E91E63" scale="2 2 2"></a-sphere>
+  <a-box
+  position="0 0.5 0"
+  rotation="0 45 0"
+  color="#E91E63"
+  scale="1 1 1"
+  animation="property: rotation; to: 0 405 0; dur: 4000; loop: true; easing: linear">
+  </a-box>
     </a-marker>
 
     <a-entity camera></a-entity>
